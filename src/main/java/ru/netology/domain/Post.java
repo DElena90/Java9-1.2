@@ -19,10 +19,10 @@ public class Post {
     private PostSource postSource;
     private Geo geo;
     private int singerId;
-    private int canPin;
-    private int canDelete;
-    private int canEdit;
-    private int isPinned;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
+    private boolean isPinned;
     private int markedAsAds;
     private boolean isFavorite;
     private int postponedId;
@@ -171,35 +171,35 @@ public class Post {
         this.singerId = singerId;
     }
 
-    public int getCanPin() {
+    public boolean getCanPin() {
         return canPin;
     }
 
-    public void setCanPin(int canPin) {
+    public void setCanPin(boolean canPin) {
         this.canPin = canPin;
     }
 
-    public int getCanDelete() {
+    public boolean getCanDelete() {
         return canDelete;
     }
 
-    public void setCanDelete(int canDelete) {
+    public void setCanDelete(boolean canDelete) {
         this.canDelete = canDelete;
     }
 
-    public int getCanEdit() {
+    public boolean getCanEdit() {
         return canEdit;
     }
 
-    public void setCanEdit(int canEdit) {
+    public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
 
-    public int getIsPinned() {
+    public boolean getIsPinned() {
         return isPinned;
     }
 
-    public void setIsPinned(int isPinned) {
+    public void setIsPinned(boolean isPinned) {
         this.isPinned = isPinned;
     }
 
